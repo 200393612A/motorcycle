@@ -225,6 +225,8 @@
     <Content Include="image\MC-enthusiasts-logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\Motorcycle - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Motorcycle - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\javas\motorcycle.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
