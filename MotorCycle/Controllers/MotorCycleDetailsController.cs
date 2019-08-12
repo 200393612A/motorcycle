@@ -10,6 +10,7 @@ using MotorCycle.Models;
 
 namespace MotorCycle.Controllers
 {
+
     public class MotorCycleDetailsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -37,6 +38,8 @@ namespace MotorCycle.Controllers
         }
 
         // GET: MotorCycleDetails/Create
+
+        [Authorize]
         public ActionResult Create()
         {
             ViewBag.MotorCycleId = new SelectList(db.MotorBikes, "Id", "MotorName");
@@ -47,6 +50,7 @@ namespace MotorCycle.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,MotorBrand,MotorModel,Country,MotorCycleId")] MotorCycleDetail motorCycleDetail)
         {
@@ -62,6 +66,8 @@ namespace MotorCycle.Controllers
         }
 
         // GET: MotorCycleDetails/Edit/5
+
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -95,6 +101,8 @@ namespace MotorCycle.Controllers
         }
 
         // GET: MotorCycleDetails/Delete/5
+
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)

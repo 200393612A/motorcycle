@@ -10,6 +10,7 @@ using MotorCycle.Models;
 
 namespace MotorCycle.Controllers
 {
+    
     public class MotorBikesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -36,6 +37,8 @@ namespace MotorCycle.Controllers
         }
 
         // GET: MotorBikes/Create
+
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -59,6 +62,8 @@ namespace MotorCycle.Controllers
         }
 
         // GET: MotorBikes/Edit/5
+
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -93,6 +98,8 @@ namespace MotorCycle.Controllers
 
 
         // GET: MotorBikes/Delete/5
+
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
