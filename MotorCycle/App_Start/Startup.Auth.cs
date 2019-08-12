@@ -62,8 +62,8 @@ namespace MotorCycle
             //google authentication
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "683935586620-ij6rf33jq1u5rprm22vts5bp49jbl9as.apps.googleusercontent.com",
-                ClientSecret = "uKc3cQcJ32v4ndCJmYaW-LLh"
+                ClientId = "683935586620-6j1j6nh5l1orepgirabf1i52faujb6rq.apps.googleusercontent.com",
+                ClientSecret = "skhTP12k8KglqQDLWxE715S6"
             });
         }
     }
